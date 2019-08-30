@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<link rel="stylesheet" href="main css.css">
+<link rel="stylesheet" href="tool.css">
+<script src="mainjs.js"></script>
+<script src="theme.js"></script>
+<script src="typ.js"></script>
+<script type="text/javascript" src="download.js"></script>
+
+<script type="text/javascript">
+    function shw(a)
+    {
+        if(a==1)
+        {
+            document.getElementById("rgt").style.display="none";
+            
+             document.getElementById("lft").style.display= "block";
+             document.getElementById("rgt2").style.display="none";
+        }
+        if(a==2)
+        {
+            document.getElementById("lft").style.display="none";
+        
+            document.getElementById("rgt").style.display= "block";
+               document.getElementById("rgt2").style.display="none";
+        }
+        if(a==3)
+        {
+            document.getElementById("lft").style.display="none";
+            document.getElementById("rgt").style.display= "none";
+            document.getElementById("rgt2").style.display="block";
+
+        }
+    }
+    
+</script>
+<script type="text/javascript">
+    function down_load()
+    {
+        var a=document.getElementById('para').innerHTML;
+        var b=document.getElementById('para2').innerHTML;
+        var c=document.getElementById('para3').innerHTML;
+        var d=""+a+""+b+""+c;
+    download(""+d, "dlText.css", "text/plain");
+    }
+</script>
+
+<style type="text/css" id="script1"></style>
+<style type="text/css" id="script2"></style>
+<style type="text/css" id="script3"></style>
+
+<body class="bdy" id="bdy">
+
+
+<header id="hd">
+    <input type="button" name="bder" id="bder" onclick="shw(1)" value="border">
+    <input type="button" name="txt" id="txt"onclick="shw(2)" value="text">
+    <input type="button" name="ani" id="ani"onclick="shw(3)" value="animation">
+    
+    <select id="buttonstate" onchange="fun()">
+    <option value="normal">normal</option>
+    <option value="hover">hover</option>
+    <option value="active">active</option>
+    </select>
+
+    <input type="button" id="sub" onclick="fun(1)" value="submit">
+
+    <select id="type" onchange="typ()" >
+<optgroup label="Input">
+    <option value="1">button</option>
+    <option value="2">checkbox</option>
+    <option value="3">color</option>
+     <option value="4">date</option>
+     <option value="5">datetime-local</option>
+     <option value="6">email</option>
+     <option value="7">file</option>
+     <option value="8">hidden</option>
+     <option value="9">image</option>
+     <option value="10">month</option>
+     <option value="11">number</option>
+     <option value="12">password</option>
+     <option value="13">radio</option>
+     <option value="14">range</option>
+     <option value="15">reset</option>
+     <option value="16">search</option>
+     <option value="17">submit</option>
+     <option value="18">tel</option>
+     <option value="19">text</option>
+     <option value="20">time</option>
+     <option value="21">url</option>
+     <option value="22">week</option>
+</optgroup>
+<optgroup label="TAG">
+     <option value="23">DIV</option>
+     <option value="24">Par</option>
+     <option value="25">form</option>
+</optgroup>
+     </select>
+
+     <select id="theme" onchange="mode()">
+     	<option value="Light">Light</option>
+     	<option value="Dark">Dark</option>
+     	<option value="pink">pink</option>
+     </select>
+     <input type="button" value="Download css" onclick="down_load()" id="downbut" name="" style="width: 200px;">
+</header>
+
+
+<div id="main">
+        <input type="button" name="" id="but" value="clickme">
+</div>
+
+
+<div id="lft">
+    topmargin<input type="range" min="10" max="177" value="10" onchange="fun()" id="topmargin"><br>
+    leftmargin<input type="range" min="1" max="40" value="109" onchange="fun()" id="leftmargin"><br> 
+	Height<input type="range" min="10" max="450" value="50" onchange="fun()" id="height"><br>
+	Width<input type="range" min="50" max="600" value="104" onchange="fun()" id="width"><br>
+
+	<h1>Border</h1>
+	borderRadius<input type="range" min="0" max="100" value="25" onchange="fun()" id="bdrradius"><br><br>
+	borderwidth  <input type="range" min="0" max="100" value="1" onchange="fun()" id="bdrwidth"><br><br>
+	bordercolor<input type="color" value="#ff0080" id="bdrcolor" onchange="fun()"><br><br>
+
+    borderstyle<select id="boderstyle" onchange="fun()">
+    <option value="outset">outset </option>
+    <option value="dotted">dotted</option>
+    <option value="dashed">dashed</option>
+    <option value="solid">solid</option>
+    <option value="double">double</option>
+    <option value="groove">groove</option>
+    <option value="ridge">ridge</option>
+    <option value="inset">inset</option>
+    <option value="none">none </option>
+    <option value="hidden">hidden</option>
+    </select><br><br>
+
+    shadow <input type="range" min="0" max="100" value="1" onchange="fun()" id="shadow"><br><br>
+	shadowcolor<input type="color" value="Blue" id="shadowcolor" onchange="fun()"><br><br>
+    backgroundcolor<input type="color" value="#FF8344" id="col" onchange="fun()"><br><br>
+    topgradient<input type="color" value="#FFD02B" id="topgrd" onchange="fun()"><br><br>
+    buttomgradient<input type="color" value="#FF422D" id="butgrd" onchange="fun()"><br><br>
+    Button url<input type="url" name="pic"  onchange="fun()" value="not use" placeholder="not use" id="backimg"><br><br>
+</div>
+
+
+<div id="rgt">
+    <h2>text</h2><br>
+
+    lable<input type="text" value="Click me" onchange="fun()" id="lable"><br><br>
+    textcolor<input type="color" onchange="fun()" id="textcolor"><br><br>
+
+    textalign<select id="textalign" onchange="fun()">
+    <option value="center">center</option>
+    <option value="left">left</option>
+    <option value="right">right</option>
+    <option value="justify">justify</option>
+    </select><br><br>
+
+    fontfamily<select id="fontfamily" onchange="fun()">
+    <option value="Times New Roman", Times, serif">Times New Roman</option>
+    <option value="Arial Black", Gadget, sans-serif">Arial Black</option>
+    <option value="Comic Sans MS", cursive, sans-serif">Comic Sans MS</option>
+    <option value="Impact, Charcoal, sans-serif">Impact, Charcoal, sans-serif</option>
+    <option value="Courier New", Courier, monospace">Courier New</option>
+    </select><br><br>
+
+    textsize<input type="range" min="0" max="100" value="20" onchange="fun()" id="textsize"><br><br><br>
+    
+</div>
+<div id="rgt2">
+	opacity<input type="range" step="0.01" min="0" max="1" value="1" name="opacity" id="opacity" onchange="fun()"><br><br>
+    skewx<input type="range" min="0" max="360" value="0" name="skewx" id="skewx" onchange="fun()"><br><br>
+    skewy<input type="range" min="-180" max="+180" value="0" name="skewy" id="skewy" onchange="fun()"><br><br>
+
+    scalex<input type="range" min="1" max="10" value="1" name="scalex" id="scalex" onchange="fun()"><br><br>
+    scaley<input type="range" min="1" max="10" value="1" name="scaley" id="scaley" onchange="fun()"><br><br>
+   
+
+    rotate <input type="range" min="0" max="360" value="0" name="rotate" id="rotate" onchange="fun()">
+
+</div>
+
+
+<div id="footer">
+	<h3>/*NORMAL STATE*/</h3>
+	<p id="para"></p>
+	<h3>/*HOVER STATE*/</h3>
+	<p id="para2"></p>
+	<h3>/*ACTIVE STATE*/</h3>
+	<p id="para3"></p>
+	<h3>/*html*/</h3>
+	<p id="para4"></p>	
+</div>
+<div id="demo"> </div>
+</body>
+</html>

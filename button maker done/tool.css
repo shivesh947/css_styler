@@ -1,0 +1,152 @@
+*:focus{
+    outline: none;
+}
+
+input[type="color"]
+{height:35px;width:55px;background-color:#ff8344;border-color:#ff0080;border-radius:0px;border-width:1px;border-Style:dotted;box-shadow:1px 1px 1px 1px #000000;background-image:linear-gradient(#ffd02b , #ff422d);font-color:#000000;font-size:20px;}
+
+input[type="range"]
+{height:30px;width:137px;border-color:#ff0080;border-radius:19px;border-width:2px;box-shadow:1px 1px 1px 1px #8080c0;}
+input[type="range"]:hover
+{
+	border-color:#2D14E8;
+	box-shadow:1px 1px 1px 1px #2D14E8;
+}
+
+input[type="button"],select
+{
+	height:34px;width:102px;
+    border-color:#4f0027;border-radius:0px;border-width:3px;border-Style:outset;
+    box-shadow:0px 0px 0px 0px #000000;background-image:linear-gradient(#ffffff , #c0c0c0);background-repeat:no-repeat;
+    background-size:cover;color:#000000;font-size:20px;text-align:center;font-family:Comic Sans MS;
+}
+
+
+input[type="button"]:hover,select:hover
+{
+	height:34px;width:102px;
+	border-color:#4f0027;border-radius:0px;border-width:3px;border-Style:outset;
+	box-shadow:1px 1px 1px 1px #000000;background-image:linear-gradient(#c0c0c0 , #ffffff);
+	background-repeat:no-repeat;background-size:cover;color:#000000;font-size:20px;text-align:center;
+	font-family:Comic Sans MS;
+}
+
+input[type="button"]:active,select:active
+{   height:34px;width:102px;
+
+	border-radius:0px;border-width:3px;border-Style:outset;box-shadow:1px 1px 1px 1px #000000;background-image:linear-gradient(#c0c0c0 , #c0c0c0);background-repeat:no-repeat;
+	background-size:cover;color:#000000;font-size:20px;text-align:center;font-family:Comic Sans MS;
+}
+#height
+{
+
+	 margin-left: 49px;
+}
+#width
+{
+	 margin-left: 49px;
+}
+#bdrradius
+{
+	position: absolute;
+
+	 margin-left: 49px;
+
+}
+#bdrwidth
+{
+	position: absolute;
+	
+	margin-left: 54px;
+
+}
+#shadow
+{
+	position: absolute;
+    margin-left: 91px;
+
+}
+#textsize
+{
+	position: absolute;
+	margin-left: 93px;
+}
+#textalign
+{
+	position: absolute;
+	margin-left: 103px;
+}
+#bdrcolor
+{
+	position: absolute;
+    margin-left: 100px;
+}
+#shadowcolor
+{
+	position: absolute;
+    margin-left: 91px;
+}
+#col
+{
+	position: absolute;
+    margin-left: 58px;
+
+}
+#topgrd
+{
+	position: absolute;
+    margin-left: 102px;
+
+}
+#butgrd
+{
+	position: absolute;
+    margin-left: 72px;
+
+}
+#backimg
+{
+	position: absolute;
+    margin-left: 52px;
+}
+#textcolor
+{
+	position: absolute;
+    margin-left: 119px;
+
+}
+#fontfamily
+{
+	margin-left:90px;
+}
+#rgt
+{
+	display: none;
+}
+#lable
+{*:focus{
+    outline: none;
+}
+	position: absolute;
+    margin-left: 97px;
+}
+#boderstyle
+{
+	position: absolute;
+    margin-left: 87px;
+}
+#skewx,#skewy,#scalex,#scaley
+{
+   position: absolute;
+    margin-left: 64px;
+}
+#rotate
+{
+	position: absolute;
+    margin-left: 65px;
+}
+#opacity
+{
+	position: absolute;
+    margin-left: 63px;
+}
